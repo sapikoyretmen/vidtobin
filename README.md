@@ -60,11 +60,9 @@ A powerful experimental tool that converts \*\*any file into a video\*\* and dec
 
 3\. Bits are mapped into blocks:
 
+&#x20;   \* ⚪ White = 1
 
-
-&#x20;  \* ⚪ White = 1
-
-&#x20;  \* ⚫ Black = 0
+&#x20;   \* ⚫ Black = 0
 
 4\. Blocks are rendered into video frames
 
@@ -73,8 +71,6 @@ A powerful experimental tool that converts \*\*any file into a video\*\* and dec
 
 
 Decoding reverses the process:
-
-
 
 \* Frames → blocks → bits → original file
 
@@ -88,7 +84,7 @@ Decoding reverses the process:
 
 
 
-```
+```text
 
 VideoFileStorage/
 
@@ -116,71 +112,45 @@ VideoFileStorage/
 
 └── Program.cs
 
-```
+📦 Requirements
+
+.NET 6 or higher
 
 
 
-\---
+Windows OS
 
 
 
-\## 📦 Requirements
+NuGet Packages:
 
 
 
-\* .NET 6 or higher
-
-\* Windows OS
-
-\* NuGet Packages:
+OpenCvSharp4
 
 
 
-&#x20; \* OpenCvSharp4
-
-&#x20; \* OpenCvSharp4.runtime.win
+OpenCvSharp4.runtime.win
 
 
 
-\---
+▶️ Run
 
-
-
-\## ▶️ Run
-
-
-
-```
+Bash
 
 dotnet run
 
-```
+⚠️ Notes
+
+Video compression may affect decoding accuracy
 
 
 
-\---
+Designed for experimental use
 
 
 
-\## ⚠️ Notes
+👑 Author
 
-
-
-\* Video compression may affect decoding accuracy
-
-\* Designed for experimental use
-
-
-
-\---
-
-
-
-\## 👑 Author
-
-
-
-Built by \*\*SBK\*\*
-
-
+Built by SBK
 
